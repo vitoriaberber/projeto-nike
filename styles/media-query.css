@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media screen and (width <= 1150px) {
+    .principal {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (width <= 1028px) {
+        .principal {
+            margin-top: 6%;
+        }
+        .principal__titulo{
+            font-size: 4rem;
+        }
+}
+
+@media screen and (width <= 744px) {
+    body {
+        overflow: auto;
+    }
+}
+
+@media screen and (width <= 600px) {
+    .cabecalho {
+        gap: 1.5rem;
+        margin: .5rem 1rem;
+    }
+
+    .navegacao__lista {
+        gap: 2rem;
+    }
+
+    .cabecalho__logo {
+        width: 15%;
+    }
+    .principal {
+        flex-direction: column;
+    }
+
+    .principal__imagem {
+        width: 70%;
+    }   
+}

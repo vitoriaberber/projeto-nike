@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --azul-claro: #0A76CC;
+    --azul-escuro: #000D61;
+    --preto: #000000;
+    --branco: #ffffff;
+    --azul: #0017aa;
+    --fonte: "Lato", Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: .5rem 3rem;
+    flex-wrap: wrap;
+}
+
+.cabecalho__logo {
+    width: 6%;
+}
+
+.navegacao__lista {
+    display: flex;
+    gap: 5rem;
+}
+
+.navegacao__ancora {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 600;
+    transition: .5s;
+}
+
+.navegacao__ancora:hover {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    padding: 1rem;
+    border-radius: 0.1rem;
+}
+
+.container__lista {
+    display: flex;
+    gap: 1rem;
+}
+
+.container__item {
+    cursor: pointer;
+}
+
+.principal {
+    margin: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.principal__imagem {
+    width: 45%;
+}
+
+.principal__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.principal__titulo {
+    font-size: 5rem;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: linear-gradient(to right, var(--azul), var(--azul-claro));
+    background-clip: text;
+    color: transparent;
+}
+
+.principal__texto {
+    text-align: justify;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.texto {
+    width: 90%;
+}
+
+.principal__botao {
+    text-decoration: none;
+    background-color: var(--azul-escuro);
+    padding: 1rem;
+    color: var(--branco);
+    border-radius: .5rem;
+    display: inline;
+    width: 90px;
+    transition: .5s;
+    margin-bottom: 1rem;
+}
+
+.principal__botao:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+    font-weight: bold;
+}
