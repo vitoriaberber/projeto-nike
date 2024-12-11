@@ -1,2 +1,2 @@
-# projeto-nike
- Projeto feito usando HTML e CSS
+# ProjetoNike
+ Projeto responsivo feito usando HTML e CSS
